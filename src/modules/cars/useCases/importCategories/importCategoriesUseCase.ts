@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { Category } from '../../models/Category'
+import { Category } from '../../entities/Category'
 import { parse as csvParse } from 'csv-parse'
 import { ICategoriesRepository } from '../../repositories/categories/ICategoriesRepository'
 
