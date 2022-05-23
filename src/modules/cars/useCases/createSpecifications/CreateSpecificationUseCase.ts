@@ -1,5 +1,5 @@
 
-import { ICategoriesRepository } from 'src/modules/cars/repositories/categories/ICategoriesRepository'
+import { ISpecificationsRepository } from 'src/modules/cars/repositories/specification/ISpecificationsRepository'
 
 interface IRequest{
   name: string;
@@ -7,7 +7,7 @@ interface IRequest{
 }
 
 class CreateSpecificationUseCase {
-  constructor (private specificationsRepository: ICategoriesRepository) {
+  constructor (private specificationsRepository: ISpecificationsRepository) {
     this.specificationsRepository = specificationsRepository
   }
 

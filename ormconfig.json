@@ -6,6 +6,9 @@
   "password": "root",
   "database": "rentx_dev",
   "synchronize": true,
+  "entities": [
+    "./src/modules/cars/entities/**/*.ts"
+  ],
   "migrations": ["./src/database/migrations/**/*.ts"],
   "logging": false,
   "cli": {
