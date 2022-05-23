@@ -1,13 +1,16 @@
 
 import { ICategoriesRepository } from 'src/modules/cars/repositories/categories/ICategoriesRepository'
+import { inject, injectable } from 'tsyringe'
 
 interface IRequest{
   name: string;
   description:string;
 }
-
+@injectable()
 class CreateCategoryUseCase {
-  constructor (private categoriesRepository: ICategoriesRepository) {
+  constructor (
+    @inject('CategoriesRepository')
+    private categoriesRepository: ICategoriesRepository) {
     this.categoriesRepository = categoriesRepository
   }
 

@@ -1,4 +1,4 @@
-import { Category } from '../../entities/Category'
+import { Specification } from '../../entities/Specification'
 import { ISpecificationsRepository } from '../../repositories/specification/ISpecificationsRepository'
 
 class ListAllSpecificationsUseCase {
@@ -6,7 +6,7 @@ class ListAllSpecificationsUseCase {
     this.specificationsRepository = specificationsRepository
   }
 
-  async execute (): Promise<Category[]> {
+  async execute (): Promise<Specification[]> {
     const allSpecifications = this.specificationsRepository.all()
     return allSpecifications
   }

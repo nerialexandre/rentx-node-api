@@ -1,4 +1,5 @@
 import connectDB from './database'
+import './shared/container/index'
 import express from 'express'
 import swaggerUi from 'swagger-ui-express'
 import { router } from './routes'
