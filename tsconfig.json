@@ -18,12 +18,9 @@
       "./src/@types"
     ],
     "resolveJsonModule": true,
-    // "baseUrl": ".",
-    // "paths": {
-    //   "@config/*": ["./src/config/*"]
-    // }
   },
   "include": [
-    "src/**/*"
-, "routes.ts"  ]
+    "src/**/*",
+    "routes.ts"
+  ]
 }
